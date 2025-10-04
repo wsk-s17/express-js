@@ -9,5 +9,4 @@ COPY . .
 ENV NODE_ENV=production
 ENV DB_HOST=competitor_db
 
-EXPOSE 3000
 CMD ["npm", "start"]
