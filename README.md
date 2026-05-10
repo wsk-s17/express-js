@@ -2,8 +2,8 @@
 
 ## Prisma Usage
 
-Always use Prisma через local binary from `node_modules` instead of global
-installation.
+Always use the local Prisma binary from `node_modules` instead of a globally
+installed version.
 
 For example:
 
