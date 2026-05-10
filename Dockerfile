@@ -1,12 +1,7 @@
-FROM node:lts-alpine
+FROM node:20-alpine as builder
 WORKDIR /app
-
-COPY package*.json ./
-RUN npm ci --omit=dev
-
+COPY .npmrc .
+COPY package*.json .
+RUN npm ci
 COPY . .
-
-ENV NODE_ENV=production
-ENV DB_HOST=competitor-db
-
-CMD ["npm", "start"]
+ENTRYPOINT node main.js
