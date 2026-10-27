@@ -11,4 +11,4 @@ COPY . .
 
 RUN npx prisma generate
 
-ENTRYPOINT ["node", "src/index.js"]
+ENTRYPOINT ["node", "--env-file-if-exists=.env", "src/index.js"]
