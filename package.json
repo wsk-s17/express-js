@@ -16,6 +16,7 @@
 	},
 	"devDependencies": {
 		"prisma": "^7.10.1",
+		"sequelize-auto": "^0.8.8",
 		"sequelize-cli": "^6.6.5"
 	},
 	"dependencies": {
